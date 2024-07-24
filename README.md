@@ -57,18 +57,22 @@ This repository contains various machine learning models implemented to estimate
   - `california_housing.csv`: Dataset used for the Polynomial Regression model.
   - `california_housing_train.csv`: Dataset used for training the Polynomial Regression model (splitted manually).
   - `california_housing_test.csv`: Dataset used for testing the Polynomial Regression model (splitted manually).
-  - `performance.png`: Performance image of the Polynomial Regression model.
+  - `Polynomial_Regression_Predicted_vs_Actual_Values.png`: Performance Predicted vs Actual Values of the Polynomial Regression model.
   - `Polynomial_Regression_Learning_Curve.png`: Performance Learning Curve of the Polynomial Regression.
-  - `text.txt`: Descriptive other performance evaluation for the Polynomial Regression model.
+  - `Polynomial_Regression_Residual_Plot.png`: Performance Residual of the Polynomial Regression model.
+  - `Polynomial_Regression report.txt`: Descriptive other performance evaluation for the Polynomial Regression model.
 
 - `Random_Forest_Regression/`
   - `Random_Forest_Regression_model.py`: Code for Random Forest Regression model.
-  - `california_housing.csv`: Dataset used for the ANN model.
-  - `california_housing_train.csv`: Dataset used for training the ANN model (splitted manually).
-  - `california_housing_test.csv`: Dataset used for testing the ANN model (splitted manually).
-  - `performance.png`: Performance image of the Random Forest Regression model.
-  - `text.txt`: Descriptive other performance evaluation for the Random Forest Regression model.
-
+  - `california_housing.csv`: Dataset used for the Random Forest Regression model.
+  - `california_housing_train.csv`: Dataset used for training the Random Forest Regression model (splitted manually).
+  - `california_housing_test.csv`: Dataset used for testing the Random Forest Regression model (splitted manually).
+  - `Random_Forest Feature Importance.png`: Performance Feature Importance of the Random Forest Regression model.
+  - `Random_Forest Predicted vs Actual Values (Best Model) (AFTER GS).png`: Performance Predicted vs Actual Values (Best Model) of the Random Forest Regression model After GS.
+  - `Random_Forest Predicted vs Actual Values sample (Best Model) (AFTER GS).png`: Performance  of the Random Forest Regression model.
+  - `Random_Forest Predicted vs Actual Values Sample BEFORE GS.png`: Performance  of the Random Forest Regression model.
+  - `Random_Forest_Predictions vs Actual Values BEFORE GS.png`: Performance  of the Random Forest Regression model.
+  - `Random_Forest_Regression report.txt`: Descriptive other performance evaluation for the Random Forest Regression model.
 
 
 ## Models Description

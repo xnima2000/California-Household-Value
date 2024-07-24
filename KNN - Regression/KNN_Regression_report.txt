@@ -1,0 +1,16 @@
+Cross-Validation MSE scores: [3.72074539e+09 3.90013858e+09 3.77746756e+09 3.93401819e+09
+ 3.83243831e+09]
+Mean CV MSE: 3832961608.624293
+Standard Deviation of CV MSE: 77971173.99092317
+[[259512.5 262300. ]
+ [246400.  296600. ]
+ [ 82175.   14999. ]
+ ...
+ [286587.5 272900. ]
+ [279025.  225000. ]
+ [364362.5 322100. ]]
+Mean Squared Error: 4032372249.5109625
+Mean Absolute Error: 43084.9841
+R^2 Score: 0.697712731271932
+Best parameters found: {'metric': 'manhattan', 'n_neighbors': 10, 'weights': 'distance'}
+Best CV MSE: 3548012653.5672865

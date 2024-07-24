@@ -68,44 +68,81 @@ This repository contains various machine learning models implemented to estimate
   - `california_housing_train.csv`: Dataset used for training the Random Forest Regression model (splitted manually).
   - `california_housing_test.csv`: Dataset used for testing the Random Forest Regression model (splitted manually).
   - `Random_Forest Feature Importance.png`: Performance Feature Importance of the Random Forest Regression model.
-  - `Random_Forest Predicted vs Actual Values (Best Model) (AFTER GS).png`: Performance Predicted vs Actual Values (Best Model) of the Random Forest Regression model After GS.
-  - `Random_Forest Predicted vs Actual Values sample (Best Model) (AFTER GS).png`: Performance  of the Random Forest Regression model.
-  - `Random_Forest Predicted vs Actual Values Sample BEFORE GS.png`: Performance  of the Random Forest Regression model.
-  - `Random_Forest_Predictions vs Actual Values BEFORE GS.png`: Performance  of the Random Forest Regression model.
+  - `Random_Forest Predicted vs Actual Values (Best Model) (AFTER GS).png`: Performance Predicted vs Actual Values (Best Model) Ratio chart of the Random Forest Regression model After Grid Search.
+  - `Random_Forest Predicted vs Actual Values sample (Best Model) (AFTER GS).png`: Performance Cover chart of Predicted vs Actual Values of the Random Forest Regression model  After Grid Search.
+  - `Random_Forest Predicted vs Actual Values Sample BEFORE GS.png`: Performance Cover chart of Predicted vs Actual Values of the Random Forest Regression model before Grid Search.
+  - `Random_Forest_Predictions vs Actual Values BEFORE GS.png`: Performance Predicted vs Actual Values Ratio chart of the Random Forest Regression model before Grid Search.
   - `Random_Forest_Regression report.txt`: Descriptive other performance evaluation for the Random Forest Regression model.
 
 
 ## Models Description
 
-### K-Nearest Neighbors (KNN)
-- **Description:** This model uses the KNN algorithm for classification and regression tasks. It predicts the price category of the houses based on the nearest neighbors.
-- **Performance:** [Link to performance image]
-- **Dataset:** `california_housing.csv`
-
 ### Artificial Neural Network (ANN)
 - **Description:** This model employs a neural network with multiple hidden layers to predict housing prices.
 - **Performance:** [Link to performance image]
 - **Dataset:** `california_housing.csv`
+- **Accuracy:** 69.358%
+- **Mean CV Score:** 0.5950032234191894
+- **Standard Deviation of CV Scores:** 0.14351486886670523
+- **Mean Squared Error:** 4087385758.388564
+- **Mean Absolute Error:** 45071.43764375
+
+### K-Nearest Neighbors (KNN) Classification
+- **Description:** This model uses the KNN algorithm for classification tasks. It predicts the price category of the houses based on the nearest neighbors.
+- **Performance:** [Link to performance image]
+- **Dataset:** `california_housing.csv`
+- **Accuracy:** 43.36%
+- **Number of neighbors:** 8
+
+### K-Nearest Neighbors (KNN) Regression
+- **Description:** This model uses the KNN algorithm for regression tasks. It predicts the price category of the houses based on the nearest neighbors.
+- **Performance:** [Link to performance image]
+- **Dataset:** `california_housing.csv`
+- **Accuracy:** 69.771%
+- **Mean CV Score:** 0.5950032234191894
+- **Mean Squared Error:** 4032372249.5109625
+- **Mean Absolute Error:** 43084.9841
+- **Best parameters found:** {'metric': 'manhattan', 'n_neighbors': 10, 'weights': 'distance'}
 
 ### Linear Regression
 - **Description:** A simple linear regression model to predict housing prices.
 - **Performance:** [Link to performance image]
 - **Dataset:** `california_housing.csv`
-
-### Polynomial Regression
-- **Description:** Extends linear regression by adding polynomial features to capture non-linear relationships.
-- **Performance:** [Link to performance image]
-- **Dataset:** `california_housing.csv`
-
-### Random Forest Regression
-- **Description:** This model uses an ensemble of decision trees (random forest) to predict housing prices.
-- **Performance:** [Link to performance image]
-- **Dataset:** `california_housing.csv`
+- **Accuracy:** 62.939%
+- **Mean CV Score:** 0.5471914738089498
+- **Standard Deviation of CV Scores:** 0.1868883871941342
+- **Mean Squared Error:** 4943690124.137082
+- **Mean Absolute Error:** 51281.25164253142
 
 ### Naive Bayes
 - **Description:** Applies the Naive Bayes algorithm for regression tasks.
 - **Performance:** [Link to performance image]
 - **Dataset:** `california_housing.csv`
+- **Accuracy:** 28.76%
+- **Mean CV Score:** 0.27865000000000006
+- **Standard Deviation of CV Scores:** 0.025299258882425783
+
+### Polynomial Regression (For degree = 2 (BEST))
+- **Description:** Extends linear regression by adding polynomial features to capture non-linear relationships.
+- **Performance:** [Link to performance image]
+- **Dataset:** `california_housing.csv`
+- **Accuracy:** 68.807%
+- **Mean Squared Error:** 4160881504.0804915
+- **Mean Absolute Error:** 45571.11553529956
+- **Mean CV Score (full dataset):** 0.5656911271135362 ( it is not calculated accuratly) 
+- **Standard Deviation of CV Scores (full dataset):** 0.20211238232914902
+
+### Random Forest Regression
+- **Description:** This model uses an ensemble of decision trees (random forest) to predict housing prices.
+- **Performance:** [Link to performance image]
+- **Dataset:** `california_housing.csv`
+- **Accuracy:** 81.568%
+- **Best cross-validation score:** 0.8163439119733275
+- **Mean Squared Error (Best Model):** 2458621703.7880063
+- **Mean Absolute Error (Best Model):** 32961.360862
+- **R^2 Score (Best Model):** 0.8156891294538196
+- **Best parameters:** {'bootstrap': False, 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+
 
 ## Getting Started
 
@@ -116,7 +153,7 @@ This repository contains various machine learning models implemented to estimate
 
 2. **Navigate to the specific model folder:**
    ```bash
-   cd California-Housing-Price-Estimation/KNN
+   cd California-Household-Value/KNN
    ```
 
 3. **Install the necessary dependencies:**
@@ -157,4 +194,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Contact
 
-For any questions or inquiries, please contact nima2abdi@gmail.com.
+For any questions or inquiries, please contact xnima2000@gmail.com.

@@ -192,6 +192,11 @@ Feel free to contribute by submitting a pull request. For major changes, please 
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-## Contact
+### Contact 
 
-For any questions or inquiries, please contact xnima2000@gmail.com.
+If you have any questions or need further assistance, you can reach out to me via email or LinkedIn:
+
+- Telegram: [Telegram Username: xnima2000](https://t.me/xnima2000) 📱💬
+- LinkedIn: [LinkedIn Profile: xnima2000](linkedin.com/in/xnima2000) 🕴️📎
+
+Feel free to connect with me for any inquiries or discussions related to this project.
